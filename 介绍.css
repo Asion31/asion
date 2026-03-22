@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+   background-color: rgb(78, 77, 77)
+}
+.text1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 100px;
+text-align: center;
+padding: 20px;
+color: rgba(229, 229, 229, 0.553);
+padding-bottom: 10px;
+border-bottom: 1px solid grey;
+}
+.bac{
+background: url(../res/002.png) repeat center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    transition: all 1s ease;
+}
+.bac:hover{
+    transform: translateX(10px);
+
+}
+.bac:hover .text2{
+    transform: translateY(-10px);
+}
+.text2{
+padding-left: 20%;
+padding-right: 50%;
+padding-top: 100px;
+color: rgba(255, 255, 255, 0.605);
+line-height: 1.8;
+transition: all 1s ease;
+}
+.img1{
+    padding: 50px;
+    column-count: 3;          /* 固定列数（根据你要的列数改，比如2/3/4） */
+    column-gap: 25px;         /* 列之间的间距（上下左右统一） */
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.img1 img{
+    border: 5px solid gray; 
+    break-inside: avoid;      /* 关键：防止图片被列分割 */
+  margin-bottom: 10px;      /* 上下间距（和列间距保持一致） */
+  width: 100%;              /* 撑满列宽 */
+    display: block;
+    transition: all 0.5s ease;
+}
+.img2:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+}
